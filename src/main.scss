@@ -1,0 +1,88 @@
+@use 'colors' as c;
+@use 'fonts' as f ;
+
+*,
+::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  min-height: 100dvh;
+  background: c.$body_BG; 
+}
+
+h1 {
+  text-align: center;
+  position: relative;
+  top: 3rem; 
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  color: c.$h1_color;
+}
+
+.quizContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70dvh;
+
+  padding-inline: 1rem;
+  max-width: 90%;
+  margin-inline: auto;
+
+  &__question {
+    margin: 3rem auto;
+    font-size: 1.4rem;
+    color: c.$question_color;
+    font-family: f.$Questions-font;
+
+	 h3{
+		text-align: center;
+	 }
+  }
+
+  &__answers {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+	 align-items: self-end;
+    gap: 2em;
+    font-size: 0.9rem;
+  }
+
+  .answer {
+    cursor: pointer;
+    width: 40%;
+    padding: 0.3em;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 0.7rem;
+    font-weight: 500;
+    font-family: f.$Answers-font;
+  }
+}
+
+.quizContainer__buttons {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  margin-top: 4em;
+
+  button {
+    padding: 0.5rem 0.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 10rem;
+    text-align: center;
+    background: c.$Buttons_BG;
+    font-weight: 500;
+    outline: 0;
+    border: 0;
+    margin-inline: 2.4rem;
+  }
+}
