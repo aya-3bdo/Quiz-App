@@ -53,7 +53,7 @@ To run the Simple Quiz App locally, follow these steps:
    ```
    npm start
    ```
-   - Then click on `index.htm` link that U'll find on the page, simply it'll open the application in your web browser.
+   - Then click on open the link on your terminal, then click `index.htm` link that U'll find on the page, simply it'll open the application in your web browser.
    - The app will present you with a series of multiple-choice questions.
 
  #### Note:
