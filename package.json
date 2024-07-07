@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "sass -w  ./src/main.scss  ./dist/index.css"
+    "compile": "sass -w  ./src/main.scss  ./dist/index.css",
+    "start"  : "npx http-server" 
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "sass": "^1.77.6"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }
